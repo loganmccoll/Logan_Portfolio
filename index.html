@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logan McColl</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geist&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <style>
+    .font-geist { font-family: 'Geist', sans-serif; }
+    html {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .nav-link {
+      opacity: 0.7;
+      transition: opacity 0.2s ease;
+    }
+    .nav-link:hover {
+      opacity: 1;
+    }
+    .hover-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      color: #3b82f6;
+      text-decoration: none;
+    }
+    .hover-link:hover {
+      text-decoration: underline;
+    }
+    .skill-pill {
+      display: inline-block;
+      padding: 2px 8px;
+      background-color: #f3f4f6;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .dark .skill-pill {
+      background-color: #1f2937;
+    }
+  </style>
+</head>
+<body class="bg-white dark:bg-black text-black dark:text-white font-geist transition-colors duration-300 text-base font-normal">
+  
+    <!-- NAVBAR --> 
+    <nav class="w-full border-b border-gray-300 dark:border-gray-700 py-4">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+          <span class="text-sm sm:text-base font-regular">Logan McColl</span>
+
+          <div class="flex gap-6 items-center text-sm sm:text-base">
+            <a href="#about" class="nav-link">about me</a>
+            <a href="#work" class="nav-link">work</a>
+            <a href="#projects" class="nav-link">projects</a>
+            <a href="#connect" class="nav-link">connect</a>
+            <button id="themeToggle" class="w-6 h-6 flex items-center justify-center">
+              <i data-lucide="moon" class="dark:hidden"></i>
+              <i data-lucide="sun" class="hidden dark:block"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="max-w-6xl mx-auto px-6">
+    <!-- Hero Section with increased top spacing -->
+
+    <section class="my-20 grid md:grid-cols-2 gap-10 items-start">
+
+      <!-- Left column: text -->
+      <div>
+        <h1 class="text-4xl font-black mb-4">Hi, I'm Logan.</h1>
+        <p class="text-base font-normal mb-6">
+          I'm a Software Developer<br>
+          and specialize in Backend Development.<br>
+          I have a passion for building scalable and efficient systems.
+        </p>
+        <p class="text-sm opacity-70">SPECIALIZE IN:</p>
+        <p class="mb-4">C++, Java, Pyhon</p>
+        <p class="text-sm opacity-70 mt-5">LANGUAGES KNOWN:</p>
+          <p>C, C++, C#, Java, JavaScript, Python, SQL </p>
+        <a href="https://docs.google.com/document/d/1cyJHSv0mobzYfFkGDnFblbh5nu5GH0Daj8flBA-KGpg/edit?usp=sharing" target="_blank" class="hover-link inline-flex items-center mt-5">
+          Download my Resume <i data-lucide="download"></i>
+        </a>
+        <p class="text-sm opacity-70 mt-5">CONNECT WITH ME:</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://github.com/loganmccoll" class="hover-link" target="_blank">GitHub <i data-lucide="arrow-up-right"></i></a>
+          <a href="https://www.linkedin.com/in/logan-mccoll-53b595222/" class="hover-link" target="_blank">LinkedIn <i data-lucide="arrow-up-right"></i></a>
+          <a href="mailto:Logan.s.mccoll@gmail.com" class="hover-link" target="_blank">Email <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+      
+
+      <!-- Right column: image -->
+      <div class="flex justify-center md:justify-end">
+        <img src="assets/display_picture.jpg" alt="Temp Photo" />
+      </div>      
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="mb-20">
+      <h2 class="text-4xl font-black mb-4">about me</h2>
+      <p class="mb-6 leading-relaxed">
+        Hi I'm Logan and I am a passionate and curious software developer focused on building clean, user-friendly applications. I recently completed my degree in Computer Science and have hands-on experience working with JavaScript, React, Python, and various web technologies through personal and group projects.
+        I enjoy solving real-world problems with code and continuously learning new tools and frameworks. Whether it’s creating an interactive front-end or working with back-end APIs, I love the challenge of turning ideas into functional solutions.
+        I'm currently seeking opportunities where I can grow as a developer, contribute to meaningful projects, and be part of a collaborative team.
+      </p>
+    </section>
+
+    <section id="skills" class="mb-20">
+      <h2 class="text-4xl font-black mb-8">skills</h2>
+    
+      <!-- Responsive icons -->
+      <div class="flex flex-wrap gap-4 items-center mb-6">
+        <!-- Colored Devicons -->
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="w-10 h-10" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-10 h-10" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-10 h-10" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-10 h-10" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-10 h-10" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-10 h-10" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-10 h-10" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="w-10 h-10" />
+        
+      </div>
+      
+    
+      <!-- Skill pills -->
+      <div class="flex flex-wrap gap-2">
+        <span class="skill-pill">GitHub</span>
+        <span class="skill-pill">VS Code</span>
+        <span class="skill-pill">OOP</span>
+        <span class="skill-pill">linux</span>
+        <span class="skill-pill">DSA</span>
+        <span class="skill-pill">Node.js</span>
+      </div>
+    </section>    
+
+    <!-- Works Section -->
+<section id="work" class="mb-20">
+  <h2 class="text-4xl font-black mb-8">work</h2>
+  <!-- Work Experience 1 -->
+  <div class="mb-10 flex gap-4">
+    <img src="assets/LSC.png" alt="Company logo" class="w-10 h-10 mt-1 object-cover rounded-full" />
+    <div>
+      <h3 class="font-bold text-lg">Lone Star College</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">PC Technician III</p>
+      <ul class="list-disc list-inside space-y-1 text-base leading-relaxed">
+        <li>Provide level one technical support to users via phone, resolving approximately 85% of incidents on first contact.</li>
+        <li>Diagnose hardware and software issues across the Windows and Mac OS platforms.</li>
+        <li>Maintain detailed documentation to ensure standard operating procedures (SOPs) were continuously up to organizational standards.</li>
+        <li>Collaborate with other functional IT teams (Server & Network) to escalate and resolve complex issues.</li>
+        <li>Reimage and configured new and existing PCs, ensuring compliance with organizational standards.</li>
+        <li>Enroll student loaner iPads into Mobile Device Management (MDM), adding additional security to school assets off campus.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mb-20">
+      <h2 class="text-4xl font-black mb-4">projects</h2>
+      <div class="mb-10 flex gap-4">
+        <div class="border-b pb-6">
+          <h3 class="text-2xl font-black mb-1">Senior Project</h3>
+          <p class="text-sm mb-2">Document Parser</p>
+          <ul class="list-disc list-inside space-y-1 text-base leading-relaxed">
+            <li>Developed a document parser that extracts and analyzes data from various file formats.</li>
+            <li>Implemented in Python using libraries like PyPDF2 and docx to handle PDF and Word documents.</li>
+            <li>Designed a user-friendly interface with Tkinter for easy interaction.</li>
+            <li>Utilized regular expressions for efficient data extraction and validation.</li>
+        </ul>
+          <a href="https://github.com/mjprecise/COSC4360.git" class="text-sm hover-link" target="_blank">GitHub <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+</div>
+<!-- Back to Top -->
+<button id="backToTop"
+  class="fixed bottom-6 right-6 flex flex-col items-center justify-center p-3
+  rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-200
+  hover:bg-blue-500 hover:text-white dark:hover:bg-blue-500 dark:hover:text-white
+  transition-all shadow-lg"
+  aria-label="Back to top">
+  <i data-lucide="arrow-up-to-line" class="w-5 h-5"></i>
+</button>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const html = document.documentElement;
+      html.classList.toggle('dark');
+      lucide.createIcons();
+    });
+    // Show/hide on scroll
+    const btn = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+    btn.style.display = window.scrollY > 300 ? "flex" : "none";
+    });
+
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+  <!-- Footer -->
+<footer class="border-t border-gray-300 dark:border-gray-700 text-center text-md text-gray-700 dark:text-gray-200 py-5 mt-20">
+    © 2025 Logan
+</footer>
+
+</body>
+</html>
