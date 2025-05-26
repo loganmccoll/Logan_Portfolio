@@ -1,0 +1,37 @@
+.font-geist {
+  font-family: 'Geist', sans-serif;
+}
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem; /* Adjust for fixed navbar */
+}
+.nav-link {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+.nav-link:hover {
+  opacity: 1;
+}
+.hover-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #3b82f6;
+  text-decoration: none;
+}
+.hover-link:hover {
+  text-decoration: underline;
+}
+.skill-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+.dark .skill-pill {
+  background-color: #1f2937;
+}
